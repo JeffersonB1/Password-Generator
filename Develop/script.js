@@ -28,6 +28,12 @@ function writePassword() {
       characters.push(i);
     }
   }
+  var numericValues = window.confirm("Would you like to add numeric values");
+  if(numericValues){
+    for(let i = 48; i <= 57; i++){
+      characters.push(i);
+    }
+  }
   
 
   
