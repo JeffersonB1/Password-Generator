@@ -34,6 +34,14 @@ function writePassword() {
       characters.push(i);
     }
   }
+  var symbols = window.confirm("Would you like to add any special character?");
+  if(symbols){
+    for(let i = 33; i <= 47; i++ ){
+      characters.push(i);
+    }
+  }
+  
+
   
 
   
