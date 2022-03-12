@@ -10,7 +10,12 @@ function writePassword() {
   var characters = [];
   var passwordLength = window.prompt("What is the length of the password you want to generate (min 8, max 128)");
   var quantityCharacter = parseInt(passwordLength);
-  
+
+  if(quantityCharacter < 8 || quantityCharacter > 128){
+    window.alert("You are not within the range of characters");
+    return writePassword();
+  }
+
   
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
