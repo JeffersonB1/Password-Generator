@@ -40,16 +40,16 @@ function writePassword() {
       characters.push(i);
     }
   }
-  
 
-  
+  for(let i = 0; i < quantityCharacter; i++){
+    var random = Math.floor(Math.random()*characters.length);
+    var character = String.fromCharCode(characters[random]);
+    results += character;
+  }
 
-  
-  var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-
+  passwordText.value = results;
 }
 
 // Add event listener to generate button
