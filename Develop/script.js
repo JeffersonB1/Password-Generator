@@ -16,6 +16,13 @@ function writePassword() {
     return writePassword();
   }
 
+  var upperCase = window.confirm("Would you like to add upper case?");
+  if(upperCase){
+    for(let i = 65; i <= 90){
+      characters.push(i);
+    }
+  }
+
   
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
