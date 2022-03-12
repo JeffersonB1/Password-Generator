@@ -18,10 +18,17 @@ function writePassword() {
 
   var upperCase = window.confirm("Would you like to add upper case?");
   if(upperCase){
-    for(let i = 65; i <= 90){
+    for(let i = 65; i <= 90; i++){
       characters.push(i);
     }
   }
+  var lowerCase = window.confirm("Would you like to add lower case?");
+  if(lowerCase){
+    for(let i = 97; i <= 122; i++){
+      characters.push(i);
+    }
+  }
+  
 
   
   var password = generatePassword();
