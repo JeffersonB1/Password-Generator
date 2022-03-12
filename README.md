@@ -22,7 +22,7 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 ## Screenshots
-![](./Develop/screenshot.png)
+![](./Assets/images/screenshot.png)
 
 ## Link to Deploy application
 https://jeffersonb1.github.io/Password-Generator/
